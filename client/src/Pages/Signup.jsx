@@ -12,10 +12,7 @@ function Signup() {
           <input type="password" placeholder="Password" />
           <input type="password" placeholder="Repeat your password" />
           <div className="input-wrapper">
-  {/* <label className="terms">
-    <input type="checkbox" />
-    <span>I agree all statements in <a href="#">Terms of service</a></span>
-  </label> */}
+ 
 </div>
 
           <button type="submit">Register</button>
