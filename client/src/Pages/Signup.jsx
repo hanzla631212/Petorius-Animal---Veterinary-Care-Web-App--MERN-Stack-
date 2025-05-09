@@ -12,7 +12,6 @@ function Signup() {
           <input type="password" placeholder="Password" />
           <input type="password" placeholder="Repeat your password" />
           <div className="input-wrapper">
- 
 </div>
 
           <button type="submit">Register</button>
