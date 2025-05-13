@@ -67,10 +67,10 @@ function Contact() {
 
     emailjs
       .send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        "service_hevmi1c",  // Replace with your EmailJS Service ID
+        "template_9wnavkp",  // Replace with your EmailJS Template ID
         templateParams,
-        process.env.REACT_APP_EMAILJS_USER_ID
+        "Dl_O-dceuUedbOBQa"      // Replace with your EmailJS User ID
       )
       .then(() => {
         resetForm();
