@@ -15,6 +15,7 @@ const Register = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [role, setRole] = useState('user');
+  
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -31,8 +32,13 @@ const Register = () => {
   const validatePassword = (password) => /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password);
   const validatePasswordMatch = (password, confirmPassword) => password === confirmPassword;
 
+
+
+
   const handleSignUp = () => setIsSignUp(true);
   const handleSignIn = () => setIsSignUp(false);
+
+
 
   const handleInputChange = (setter, validator, fieldName) => (e) => {
     let value = e.target.value;
@@ -74,7 +80,7 @@ const Register = () => {
       cnic: "CNIC must be exactly 13 digits.",
       password: "Password must include uppercase, lowercase, number & special character.",
       confirmPassword: "Passwords do not match.",
-      role: "Please select a role.",
+      role: "Please select a define role.",
     };
     return messages[fieldName] || "Invalid input.";
   };
