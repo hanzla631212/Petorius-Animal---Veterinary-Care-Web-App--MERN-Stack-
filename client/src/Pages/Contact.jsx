@@ -3,6 +3,7 @@ import "./Contact.css";
 import { MdPhone, MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import emailjs from "emailjs-com";
+import PageHeader from "../Components/PageHeader/PageHeader";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -88,6 +89,7 @@ function Contact() {
 
   return (
     <div className="contact-container">
+       <PageHeader title="QUICK CONTACT" />
       <div className="top-section">
         <div className="contact-image">
           <img
@@ -97,7 +99,7 @@ function Contact() {
         </div>
 
         <div className="contact-form">
-          <h2>Quick Contact</h2>
+          {/* <h2>Quick Contact</h2> */}
           {isSubmitted && (
             <div className="success-message">
               <p>Thank you! We'll get back to you soon.</p>
@@ -192,3 +194,4 @@ function Contact() {
 }
 
 export default Contact;
+

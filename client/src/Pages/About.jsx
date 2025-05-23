@@ -1,5 +1,7 @@
-import React from "react";
+import React from 'react';
 import "./About.css";
+import PageHeader from '../Components/PageHeader/PageHeader';
+
 
 import petSaleImg from "../assets/Sale&Purchase.jpg";
 import petFoodImg from "../assets/petFoodImg.jpg";
@@ -10,10 +12,12 @@ import founder3 from "../assets/download.png";
 
 const About_Component = () => {
   return (
+    <>
+    <PageHeader title="WELCOME TO PETORIUS" />
     <div className="about-container">
       <section className="about-introduction center-content">
         <div className="about-text">
-          <h2 className="section-title">Welcome to Petorius</h2>
+          {/* <h2 className="section-title">Welcome to Petorius</h2> */}
           <p>
             Petorius is your one-stop platform for everything related to pets.
             Whether you're buying or selling pets, shopping for food or medicine,
@@ -28,7 +32,8 @@ const About_Component = () => {
       </section>
 
       <section className="about-services">
-        <h2 className="section-title center-content">Our Services</h2>
+      <PageHeader title="Our Services" />
+        {/* <h2 className="section-title center-content">Our Services</h2> */}
 
         <div className="service-row">
           <div className="service-item">
@@ -96,7 +101,8 @@ const About_Component = () => {
       </section>
 
       <section className="about-mission center-content">
-        <h2 className="section-title">Our Mission</h2>
+      <PageHeader title="Our Mission" />
+        {/* <h2 className="section-title">Our Mission</h2> */}
         <p>
           We're committed to revolutionizing pet care by combining technology
           and compassion. Petorius is where love meets convenience — for pets
@@ -113,7 +119,8 @@ const About_Component = () => {
       </section>
 
       <section className="about-team center-content">
-        <h2 className="section-title">Meet the Founders</h2>
+      <PageHeader title="Meet the Founders" />
+        {/* <h2 className="section-title">Meet the Founders</h2> */}
         <p>
           Our team of developers, veterinarians, pet lovers, and customer care
           experts work behind the scenes to deliver excellence in every interaction.
@@ -129,6 +136,7 @@ const About_Component = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

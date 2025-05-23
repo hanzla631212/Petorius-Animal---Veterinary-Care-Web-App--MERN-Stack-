@@ -1,0 +1,123 @@
+.pet-card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 400px; /* Consistent height */
+  }
+  
+  .pet-card:hover,
+  .pet-card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .pet-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background-color: #e0e0e0;
+  }
+  
+  .pet-card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push bottom button down */
+    flex-grow: 1;
+    gap: 0.75rem;
+  }
+  
+  .pet-card-content h2 {
+    color: #4783b5; /* changed from green to medicine blue */
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .pet-description {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    word-break: break-word;
+    flex-grow: 1;
+  }
+  
+  .pet-see-more-btn {
+    background: none;
+    border: none;
+    color: #4783b5; /* changed */
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 0.3rem;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  .pet-see-more-btn:focus-visible {
+    outline: 2px solid #4783b5; /* changed */
+    outline-offset: 2px;
+  }
+  
+  .pet-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #4783b5; /* changed */
+    font-weight: 500;
+  }
+  
+  .pet-meta-item {
+    display: flex;
+    align-items: center;
+    background-color: #e0eaf6; /* changed from greenish to blueish */
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+  }
+  
+  .pet-meta-item .pet-icon {
+    margin-right: 0.4rem;
+    font-size: 1.1rem;
+    color: #4783b5; /* changed */
+  }
+  
+  .pet-buy-btn,
+  .pet-contact-btn {
+    margin-top: 1rem;
+    align-self: center;
+    background-color: #4783b5; /* changed */
+    color: white;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .pet-buy-btn:hover,
+  .pet-contact-btn:hover,
+  .pet-buy-btn:focus-visible,
+  .pet-contact-btn:focus-visible {
+    background-color: #386ca2; /* changed */
+    outline: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 599px) {
+    .pet-card-content h2 {
+      font-size: 1.25rem;
+    }
+  }
+  

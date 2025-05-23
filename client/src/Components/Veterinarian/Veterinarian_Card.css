@@ -1,0 +1,179 @@
+/* Wrapper for all cards */
+.veterinarian-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  /* Individual Card */
+  .vet-card {
+    position: relative;
+    display: flex;
+    width: 400px;
+    min-height: 350px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px 20px 20px 100px;
+    color: #272524;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .vet-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Profile Image */
+  .vet-img {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Text Section */
+  .vet-details h2,
+  .vet-details h4,
+  .vet-details p,
+  .vet-details .location,
+  .vet-details .availability,
+  .vet-details .expertise {
+    color: #000000;
+    margin-left: 40px;
+    text-align: left;
+    opacity: 1;
+  }
+  
+  .vet-details h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .vet-details h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .vet-details p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .vet-bio {
+    padding-left: 40px;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #000000;
+  }
+  
+  /* Updated Icon + Meta Text Row (like medicines card meta) */
+  .vet-meta {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    gap: 0.5rem; /* spacing between icon and text */
+    /* background-color: #e0eaf6; light blue background like medicines meta */
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #4783b5;
+    max-width: fit-content; /* shrink to content width */
+  }
+  
+  .vet-icon {
+    font-size: 1.1rem;
+    color: #4783b5;
+    flex-shrink: 0;
+    margin-right: 0.4rem;
+  }
+  
+  /* Text inside vet-meta should inherit color & font-weight */
+  .vet-meta p,
+  .vet-meta h4,
+  .vet-meta span {
+    margin: 0;
+    color: #000000;
+  }
+  
+  /* Hire Button */
+  .hire-button {
+    margin-left: 55px;
+    background-color: #4783b5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+  }
+  
+  .hire-button:hover,
+  .hire-button:focus-visible {
+    background-color: #386ca2;
+    outline: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .vet-card {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .vet-img {
+      position: static;
+      transform: none;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  
+    .vet-details {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .vet-details h2,
+    .vet-details h4,
+    .vet-details p,
+    .vet-bio,
+    .vet-meta,
+    .hire-button {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .vet-meta {
+      justify-content: center;
+    }
+  
+    .hire-button {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 440px) {
+    .vet-card {
+      width: 90vw;
+      padding: 20px;
+    }
+  }
+  

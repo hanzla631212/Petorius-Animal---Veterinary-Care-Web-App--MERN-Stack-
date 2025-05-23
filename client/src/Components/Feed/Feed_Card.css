@@ -1,0 +1,169 @@
+.feeds-card {
+    width: 100%;
+    min-width: 0;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, height 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* Removed min-height to avoid forcing all cards to same height */
+}
+
+.feeds-card.expanded {
+    height: auto; /* Only expanded card grows height */
+    transition: height 0.5s ease;
+}
+
+.feeds-card:hover,
+.feeds-card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.feeds-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background-color: #dddddd;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    transition: filter 0.3s ease;
+}
+
+.feeds-card:hover .feeds-card-image {
+    filter: brightness(0.95);
+}
+
+/* Main content container inside card */
+.feeds-card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* spread children vertically */
+    gap: 1rem; /* consistent vertical gap */
+    flex-grow: 1;
+    min-height: 350px; /* keep a base height so cards look balanced */
+    box-sizing: border-box;
+}
+
+.feeds-card-content h2 {
+    color: #4783b5;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.feeds-card-content p.feed-description {
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+    line-height: 1.5;
+    word-break: break-word;
+    white-space: pre-line;
+    flex-grow: 1;
+    overflow: hidden;
+    /* To limit text height when not expanded */
+    max-height: 6rem; /* adjust this for how much preview text you want */
+    transition: max-height 0.5s ease;
+}
+
+.feeds-card.expanded .feeds-card-content p.feed-description {
+    max-height: none; /* show full description when expanded */
+}
+
+/* "See more" button */
+.feed-see-more-btn {
+    background: none;
+    border: none;
+    color: #4783b5;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 0.4rem;
+    padding: 0;
+    font-size: 1rem;
+    display: inline;
+    vertical-align: baseline;
+    text-decoration: underline;
+    user-select: none;
+}
+
+.feed-see-more-btn:focus-visible {
+    outline: 2px solid #4783b5;
+    outline-offset: 2px;
+}
+
+.feeds-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.feed-meta-item {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e1ecf7;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03);
+    color: #4783b5;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.feed-meta-item .feed-icon {
+    font-size: 1.1rem;
+    color: #4783b5;
+    margin-right: 0.3rem;
+}
+
+.feed-meta-item:hover {
+    background-color: #c3dcf2;
+}
+
+.feeds-price {
+    font-size: 1.2rem;
+    color: #2c5f8a;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.feed-order-btn {
+    background-color: #4783b5;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    align-self: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.feed-order-btn:hover,
+.feed-order-btn:focus-visible {
+    background-color: #386d97;
+    outline: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 599px) {
+    .feeds-card-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .feeds-card {
+        height: auto !important; /* ensures mobile cards expand naturally */
+    }
+}

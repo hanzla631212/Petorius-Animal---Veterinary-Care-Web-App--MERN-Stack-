@@ -62,39 +62,33 @@
     width: 100%;
 }
 
+/* === Auth Button Styles === */
 .auth-buttons {
-    display: flex;
-    gap: 1rem;
     margin-left: 2rem;
 }
 
-.btn {
-    padding: 0.5rem 1rem;
-    border: 2px solid #4682B4;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #4682B4;
+.auth-buttons .btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    background-color: white;
+    color: #5F6366;
     font-weight: 600;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-    position: relative;
-}
-
-.btn:hover {
-    background-color: #4682B4;
-    color: white;
-    transform: translateY(-3px);
-}
-
-.login {
-    background-color: #4682B4;
-    color: white;
+    font-size: 1rem;
     border: 2px solid #4682B4;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.login:hover {
-    background-color: #5F6366;
+.auth-buttons .btn:hover {
+    background-color: #4682B4;
+    color: white;
     transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-buttons .btn:focus {
+    outline: none;
 }
 
 /* === Hamburger Menu === */
@@ -157,24 +151,17 @@
 
     .auth-buttons {
         width: 80%;
-        margin: 1rem auto;
+        margin: 1rem auto 0;
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 0;
-    }
-
-    .auth-buttons .btn,
-    .auth-buttons .btn.login {
-        width: 50%;
-        text-align: center;
-        padding: 10px 0;
-        font-size: 1rem;
-        border-radius: 0;
     }
 
     .auth-buttons .btn {
-        border-right: 1px solid #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px 0;
+        border-radius: 0;
     }
 
     .hamburger {
@@ -208,24 +195,17 @@
 
     .auth-buttons {
         width: 80%;
-        margin: 1rem auto;
+        margin: 1rem auto 0;
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 0;
-    }
-
-    .auth-buttons .btn,
-    .auth-buttons .btn.login {
-        width: 50%;
-        text-align: center;
-        padding: 10px 0;
-        font-size: 1rem;
-        border-radius: 0;
     }
 
     .auth-buttons .btn {
-        border-right: 1px solid #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px 0;
+        border-radius: 0;
     }
 
     .hamburger {
@@ -246,9 +226,10 @@
         padding: 0.4rem 0.8rem;
     }
 
-    .auth-buttons .btn,
-    .auth-buttons .btn.login {
-        width: 48%;
+    /* Ensure the button width is 100% */
+    .auth-buttons .btn {
+        width: 100%;
+        font-size: 0.9rem; /* Smaller text size */
     }
 
     .logo a {
@@ -259,6 +240,7 @@
         font-size: 0.9rem;
     }
 }
+
 
 @media (min-width: 1025px) and (max-width: 1440px) {
     .nav-links {

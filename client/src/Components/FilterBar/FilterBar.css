@@ -1,0 +1,128 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem; /* Optional padding for better spacing */
+  align-items: center;
+  position: relative; /* To position filter icon */
+}
+
+.filter-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #4e8cff;
+  margin-right: 1rem;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.search-box,
+.dropdown,
+.reset-btn,
+.sort-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  width: 200px;
+  min-width: 180px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.search-box:focus,
+.dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4e8cff55;
+}
+
+.reset-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #e74c3c;
+}
+
+.sort-btn {
+  background-color: #4e8cff;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sort-btn:hover {
+  background-color: #2f6be0;
+}
+
+/* Dropdown text alignment */
+.dropdown {
+  text-align: left; /* Align text to the left in dropdown */
+}
+
+/* For smaller screens (768px) */
+@media screen and (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .search-box,
+  .dropdown,
+  .reset-btn,
+  .sort-btn {
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+
+  .filter-icon {
+    display: block; /* Show filter icon on smaller screens */
+  }
+}
+
+/* For very small screens (480px) */
+@media screen and (max-width: 480px) {
+  .filter-bar {
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-box,
+  .dropdown,
+  .reset-btn,
+  .sort-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    width: 70%;
+  }
+
+  .filter-icon {
+    font-size: 2rem; /* Icon size */
+    color: #4e8cff;
+  }
+}

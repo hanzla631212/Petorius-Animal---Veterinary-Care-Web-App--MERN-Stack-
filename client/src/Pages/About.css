@@ -5,8 +5,8 @@
   }
   
   .about-container {
-    padding: 60px 40px;
-    background: #ffffff;
+    padding: 0px 40px;
+    /* background: #ffffff; */
     color: #5F6366;
   }
   
@@ -256,9 +256,9 @@
   
   /* 🖥️ Large Screens / UHD */
   @media (min-width: 1441px) {
-    .about-container {
-      padding: 80px 100px;
-    }
+    /* .about-container {
+      /* padding: 80px 100px; * /
+    } */
   
     .section-title {
       font-size: 3rem;
