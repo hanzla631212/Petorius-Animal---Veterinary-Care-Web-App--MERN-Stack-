@@ -42,7 +42,7 @@ const Feed = () => {
               <p><strong>Food:</strong> {food}</p>
               <p className="feed-time">{time}</p>
             </div>
-          </div>
+          </div>                       
         ))}
       </div>
     </div>
