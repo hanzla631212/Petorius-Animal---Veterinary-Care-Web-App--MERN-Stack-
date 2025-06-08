@@ -5,7 +5,7 @@ import petSaleImg from "../assets/Sale&Purchase.jpg";
 import petFoodImg from "../assets/petFoodImg.jpg";
 import petConsultImg from "../assets/petConsultImg.jpg";
 import founder1 from "../assets/Ahsan.jpg";
-import founder2 from "../assets/Hanzla_Pic.jpg";
+import founder2 from "../assets/Hanzla_Pic.jpg";           
 import founder3 from "../assets/download.png";
 
 const About_Component = () => {
