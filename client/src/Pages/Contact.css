@@ -152,7 +152,7 @@ form button:disabled {
 }
 
 .info-block:hover .info-icon-container {
-  border-color: #4682b4;
+  border-color: #4682b4;    
 }
 
 .info-block:hover .info-icon {
