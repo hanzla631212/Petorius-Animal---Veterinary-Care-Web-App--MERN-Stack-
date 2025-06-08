@@ -13,7 +13,7 @@ const Medicines = () => {
   const [suggestions, setSuggestions] = useState([]);
 
   useEffect(() => {
-    const medicineData = [
+    const medicineData = [  
       {
         id: 1,
         name: 'Paracetamol',
@@ -237,6 +237,9 @@ const Medicines = () => {
 };
 
 export default Medicines;
+
+
+
 
 
 
