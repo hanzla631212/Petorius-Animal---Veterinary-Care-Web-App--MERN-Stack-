@@ -13,7 +13,7 @@ const feedData = [
   },
   {
     id: 2,
-    petName: 'Whiskers',
+    petName: 'Whiskers',                 
     petType: 'Cat',
     food: 'Salmon Wet Food',
     time: 'Today, 8:30 AM',
