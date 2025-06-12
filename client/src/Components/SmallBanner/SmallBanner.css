@@ -1,0 +1,147 @@
+/* General Styles */
+.banner-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px; /* Spacing between sections */
+  }
+  
+  .banner-image {
+    flex: 1;
+    min-width: 300px; /* Ensures image doesn't shrink too much on small screens */
+  }
+  
+  .banner-image img {
+    width: 100%;
+    height: auto;
+   
+  }
+  
+  /* Right Section */
+  .banner-content {
+    flex: 1;
+    min-width: 300px; /* Ensures content doesn't shrink too much */
+  }
+  
+  .banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .banner-description {
+    color: #555;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    flex-wrap: wrap; /* Features wrap on smaller screens */
+    gap: 20px; /* Space between features */
+    justify-content: space-between;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: calc(50% - 10px); /* Two features per row on larger screens */
+  }
+  
+  .feature-icon {
+    font-size: 1.5rem;
+    color: #2D74BA;
+  }
+  
+  .feature-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .feature-description {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
+  /* Button */
+  .about-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2D74BA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .about-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .banner-container {
+      flex-direction: column; /* Stack image and content vertically */
+    }
+  
+    .banner-title {
+      font-size: 1.8rem; /* Slightly smaller titles */
+    }
+  
+    .feature {
+      width: 100%; /* Each feature takes full width */
+    }
+  
+    .about-button {
+      width: 100%; /* Full-width button for better readability */
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner-title {
+      font-size: 1.5rem;
+    }
+  
+    .banner-description {
+      font-size: 0.9rem;
+    }
+  
+    .feature-icon {
+      font-size: 1.2rem; /* Slightly smaller icons */
+    }
+  
+    .feature-title {
+      font-size: 1rem;
+    }
+  
+    .feature-description {
+      font-size: 0.8rem;
+    }
+  
+    .about-button {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner-title {
+      font-size: 1.2rem; /* Even smaller titles for small devices */
+    }
+  
+    .banner-description {
+      font-size: 0.8rem;
+    }
+  
+    .feature {
+      gap: 5px; /* Reduce gap between icon and text */
+    }
+  
+    .about-button {
+      font-size: 0.9rem; /* Smaller button text */
+    }
+  }
