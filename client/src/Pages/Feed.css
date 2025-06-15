@@ -6,15 +6,13 @@
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
   }
-  
-  .feed-title {
+   .feed-title {
     text-align: center;
     font-size: 2rem;
     color: #333;                       
     margin-bottom: 1.5rem;
     font-weight: 600;
   }
-  
   .feed-cards {
     display: flex;
     flex-wrap: wrap;
