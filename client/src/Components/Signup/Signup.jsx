@@ -8,7 +8,7 @@ function Signup() {
     password: '',
     confirmPassword: '',
   });
-
+           
   const handleChange = (e) => {
     setFormData(prev => ({
       ...prev,
