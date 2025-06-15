@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-
+                    
 import petSaleImg from "../assets/Sale&Purchase.jpg";
 import petFoodImg from "../assets/petFoodImg.jpg";
 import petConsultImg from "../assets/petConsultImg.jpg";
