@@ -11,7 +11,7 @@ const Medicines = () => {
   const [typeOptions, setTypeOptions] = useState([]);
   const [petOptions, setPetOptions] = useState([]);
   const [suggestions, setSuggestions] = useState([]);
-
+              
   useEffect(() => {
     const medicineData = [  
       {
