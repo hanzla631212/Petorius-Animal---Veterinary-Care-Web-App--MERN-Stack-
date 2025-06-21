@@ -1,7 +1,6 @@
 import React from 'react';
 import './Feed.css';
 import { FaDog, FaFish, FaCat } from 'react-icons/fa';
-
 const feedData = [
   {
     id: 1,
@@ -11,7 +10,7 @@ const feedData = [
     time: 'Today, 9:00 AM',
     icon: <FaDog />,
   },
-  {
+  {                                     
     id: 2,
     petName: 'Whiskers',                 
     petType: 'Cat',
