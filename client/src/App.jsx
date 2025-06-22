@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-
 import Home from './Pages/Home';
 import Pets from './Pages/Pets';
 import Veterinarian from './Pages/Veterinarian';
@@ -10,8 +9,6 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
-
-
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer'
 
@@ -37,3 +34,5 @@ function App() {
 }
 
 export default App;
+
+
